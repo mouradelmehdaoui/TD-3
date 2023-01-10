@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* Variable Couleur & reglage Layout */
+
+
+:root {
+    --color-text: #000000;
+    --color-container: #F2F2F2;
+    --color-card: #FFFFFF;
+    --color-icon: #0065FC;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    /*--------- Hebergement Marseille - Populaire -------*/
+
+    #restaurant {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: var(--color-container);
+    }
+
+    .card-restaurant {
+        width: 80%;
+        overflow: hidden;
+        margin: auto;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-text {
+        background: var(--color-card);
+        border-radius: 0px 0px 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .card-restaurant img {
+        height: 144px;
+        width: 100%;
+
+    }
+
+    /*--------- Footer-------*/
+    footer {
+        width: 100%;
+        background-color: #2c2b2b;
+    }
+
+    .about,
+    .services,
+    .assistance {
+        width: 100%;
+    }
+
+    /*--------- NavBar Header -------*/
+
+    #fonctionnement {}
+
+    .phone,
+    .menu,
+    .store {}
+
+
+}
