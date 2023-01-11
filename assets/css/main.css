@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 /* Variable Couleur & reglage Layout */
 
@@ -21,14 +22,8 @@
 }
 
 body {
-
     width: 100%;
     margin: auto;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
 }
 
 
@@ -36,20 +31,34 @@ body {
 
     /*--------- Hebergement Marseille - Populaire -------*/
 
+    header img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+
+
     #restaurant {
         display: flex;
         flex-direction: column;
         width: 100%;
         background: var(--color-container);
+        justify-content: space-around;
+        min-height: 1060px;
+        padding: 50px 0px 50px 0px;
     }
 
     .card-restaurant {
-        width: 80%;
         overflow: hidden;
-        margin: auto;
         border-radius: 20px;
         display: flex;
         flex-direction: column;
+    }
+
+    .card-restaurant, #restaurant> h2 {
+        width: 90%;
+        margin: auto;
     }
 
     .card-text {
@@ -64,28 +73,45 @@ body {
     .card-restaurant img {
         height: 144px;
         width: 100%;
+        object-fit: cover;
 
     }
 
     /*--------- Footer-------*/
     footer {
         width: 100%;
-        background-color: #2c2b2b;
+        background-color: rgba(53,53,53,255);
+        color: white;
     }
 
-    .about,
-    .services,
-    .assistance {
-        width: 100%;
+    footer ul li:first-child {
+        font-family: 'Shrikhand', cursive;
     }
 
-    /*--------- NavBar Header -------*/
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        height: 158px;
+        justify-content: space-between;
+        padding: 20px;
+    }
 
-    #fonctionnement {}
+    footer ul li .fa-solid {
+        margin-right: 10px;
+    }
 
-    .phone,
-    .menu,
-    .store {}
+.about,
+.services,
+.assistance {
+    width: 100%;
+}
 
+/*--------- NavBar Header -------*/
+
+#fonctionnement {}
+
+.phone,
+.menu,
+.store {}
 
 }
