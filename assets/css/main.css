@@ -27,6 +27,30 @@ body {
 }
 
 
+#reserve {
+    background: var(--color-container);
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 40px;
+}
+
+#reserve button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #ffff;
+    border-radius: 30px;
+    background: rgb(236, 115, 218);
+    background: linear-gradient(126deg, rgba(236, 115, 218, 1) 0%, rgba(184, 98, 220, 1) 96%);
+}
+
+
+
+
+
 @media screen and (max-width: 768px) {
 
     /*--------- Hebergement Marseille - Populaire -------*/
@@ -37,7 +61,6 @@ body {
         margin-right: auto;
         padding: 10px;
     }
-
 
     #restaurant {
         display: flex;
@@ -56,7 +79,8 @@ body {
         flex-direction: column;
     }
 
-    .card-restaurant, #restaurant> h2 {
+    .card-restaurant,
+    #restaurant>h2 {
         width: 90%;
         margin: auto;
     }
@@ -80,7 +104,7 @@ body {
     /*--------- Footer-------*/
     footer {
         width: 100%;
-        background-color: rgba(53,53,53,255);
+        background-color: rgba(53, 53, 53, 255);
         color: white;
     }
 
@@ -100,18 +124,31 @@ body {
         margin-right: 10px;
     }
 
-.about,
-.services,
-.assistance {
-    width: 100%;
-}
+    .about,
+    .services,
+    .assistance {
+        width: 100%;
+    }
 
-/*--------- NavBar Header -------*/
+    /*--------- NavBar Header -------*/
 
-#fonctionnement {}
+    #fonctionnement {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 320px;
+    }
 
-.phone,
-.menu,
-.store {}
+    .phone,
+    .menu,
+    .store {
+        border-radius: 20px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+        padding: 25px;
+        text-align: center;
+        margin: auto;
+        width: 87%;
+        font-weight: bold;
+    }
 
 }
