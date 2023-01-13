@@ -27,10 +27,16 @@ body {
 }
 
 
+/*--------- Header - Logo -------*/
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
 #reserve {
     background: var(--color-container);
-    width: 100%;
-    display: block;
     text-align: center;
     padding: 40px;
 }
@@ -39,116 +45,100 @@ body {
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
-    font-size: 1rem;
     text-align: center;
     color: #ffff;
     border-radius: 30px;
-    background: rgb(236, 115, 218);
-    background: linear-gradient(126deg, rgba(236, 115, 218, 1) 0%, rgba(184, 98, 220, 1) 96%);
+    background: linear-gradient(2deg, rgba(236, 115, 218, 1) 0%, rgba(184, 98, 220, 1) 96%);
+}
+
+/*--------- Section - Fonctionnement -------*/
+
+#fonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 320px;
+}
+
+.phone,
+.menu,
+.store {
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    padding: 25px;
+    text-align: center;
+    margin: auto;
+    font-weight: bold;
+}
+
+/*--------- Section - Restaurants -------*/
+#restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--color-container);
+    min-height: auto;
+    padding: 50px 0px 50px 0px;
+}
+
+.card-restaurant {
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    margin: auto;
+}
+
+#restaurant>h2 {
+    flex: 100%;
+}
+
+.card-text {
+    background: var(--color-card);
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.card-restaurant img {
+    height: 144px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/*--------- Footer-------*/
+footer {
+    background-color: rgba(53, 53, 53, 255);
+    color: white;
+}
+
+footer h3 {
+    font-family: 'Shrikhand', cursive;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: auto;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+footer ul li {
+    width: auto;
+}
+
+footer ul li .fa-solid {
+    margin-right: 10px;
 }
 
 
 
+@media screen and (min-width: 768px) {
 
 
-@media screen and (max-width: 768px) {
-
-    /*--------- Hebergement Marseille - Populaire -------*/
-
-    header img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px;
-    }
-
-    #restaurant {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        background: var(--color-container);
-        justify-content: space-around;
-        min-height: 1060px;
-        padding: 50px 0px 50px 0px;
-    }
-
-    .card-restaurant {
-        overflow: hidden;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card-restaurant,
-    #restaurant>h2 {
-        width: 90%;
-        margin: auto;
-    }
-
-    .card-text {
-        background: var(--color-card);
-        border-radius: 0px 0px 20px 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px;
-    }
-
-    .card-restaurant img {
-        height: 144px;
-        width: 100%;
-        object-fit: cover;
-
-    }
-
-    /*--------- Footer-------*/
-    footer {
-        width: 100%;
-        background-color: rgba(53, 53, 53, 255);
-        color: white;
-    }
-
-    footer ul li:first-child {
-        font-family: 'Shrikhand', cursive;
-    }
-
-    footer ul {
-        display: flex;
-        flex-direction: column;
-        height: 158px;
-        justify-content: space-between;
-        padding: 20px;
-    }
-
-    footer ul li .fa-solid {
-        margin-right: 10px;
-    }
-
-    .about,
-    .services,
-    .assistance {
-        width: 100%;
-    }
-
-    /*--------- NavBar Header -------*/
-
-    #fonctionnement {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        height: 320px;
-    }
-
-    .phone,
-    .menu,
-    .store {
-        border-radius: 20px;
-        box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
-        padding: 25px;
-        text-align: center;
-        margin: auto;
-        width: 87%;
-        font-weight: bold;
-    }
 
 }
