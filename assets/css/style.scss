@@ -1,0 +1,163 @@
+/*# sourceMappingURL=main.css.map */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+
+/* Variable Couleur */
+@import "./partials/variables";
+
+/* Variable Couleur & reglage Layout */
+
+
+* {
+    font-family: $font;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+
+/*--------- Header - Logo -------*/
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+#reserve {
+    background: $color-container;
+    text-align: center;
+    padding: 40px;
+
+    button {
+        border: 0;
+        line-height: 2.5;
+        padding: 0 20px;
+        text-align: center;
+        color: #ffff;
+        border-radius: 30px;
+        background: linear-gradient(2deg, rgba(236, 115, 218, 1) 0%, rgba(184, 98, 220, 1) 96%);
+    }
+}
+
+/*--------- Section - Fonctionnement -------*/
+
+#fonctionnement {
+    display: flex;
+    flex-wrap: wrap;
+    height: 430px;
+    align-items: center;
+    padding: 50px 0px 50px 0px;
+    h2 {
+        width: 320px;
+        margin: auto;
+    }
+
+    .phone,
+    .menu,
+    .store {
+        border-radius: 20px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+        padding: 25px;
+        text-align: center;
+        width: 320px;
+        margin: auto;
+        font-weight: bold;
+    }
+    i {
+        float: left;
+    }
+
+
+}
+
+/*--------- Section - Restaurants -------*/
+#restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    background: $color-container;
+    min-height: auto;
+    padding: 50px 0px 50px 0px;
+
+    h2 {
+        width: 320px;
+        margin: auto;
+    }
+
+    .card-restaurant {
+        border-radius: 20px 20px;
+        display: flex;
+        flex-direction: column;
+        width: 320px;
+        margin: auto;
+        padding: 15px 0px 15px 0px;
+    }
+
+    .card-text {
+        background: $color-card;
+        border-radius: 0px 0px 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .card-restaurant img {
+        height: 144px;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+
+}
+
+/*--------- Footer-------*/
+footer {
+    background-color: $color-footer;
+    color: white;
+
+    h3 {
+        font-family: $font-logo;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: auto;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    ul li {
+        width: 190px;
+    }
+
+    ul li .fa-solid {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    #fonctionnement {
+        height: auto;
+        h2{
+            width: 98%;
+        }
+    }
+
+    #restaurant {
+        h2 {
+            width: 98%;
+        }
+    }
+
+}
