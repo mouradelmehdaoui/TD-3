@@ -1,143 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
-
+/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/* Variable Couleur */
 /* Variable Couleur & reglage Layout */
-
-:root {
-    --color-text: #000000;
-    --color-container: #F2F2F2;
-    --color-card: #FFFFFF;
-    --color-icon: #0065FC;
-}
-
 * {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 body {
-    width: 100%;
-    margin: auto;
+  width: 100%;
+  margin: auto;
 }
-
 
 /*--------- Header - Logo -------*/
 header img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
 }
 
 #reserve {
-    background: var(--color-container);
-    text-align: center;
-    padding: 40px;
+  background: #F2F2F2;
+  text-align: center;
+  padding: 40px;
 }
-
 #reserve button {
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    text-align: center;
-    color: #ffff;
-    border-radius: 30px;
-    background: linear-gradient(2deg, rgba(236, 115, 218, 1) 0%, rgba(184, 98, 220, 1) 96%);
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  text-align: center;
+  color: white;
+  border-radius: 30px;
+  background: linear-gradient(2deg, rgb(236, 115, 218) 0%, rgb(184, 98, 220) 96%);
 }
 
 /*--------- Section - Fonctionnement -------*/
-
 #fonctionnement {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 430px;
+  align-items: center;
+  padding: 50px 0px 50px 0px;
 }
-
-.phone,
-.menu,
-.store {
-    border-radius: 20px;
-    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
-    padding: 25px;
-    text-align: center;
-    margin: auto;
-    font-weight: bold;
+#fonctionnement h2 {
+  width: 320px;
+  margin: auto;
+}
+#fonctionnement .phone,
+#fonctionnement .menu,
+#fonctionnement .store {
+  border-radius: 20px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 25px;
+  text-align: center;
+  width: 320px;
+  margin: auto;
+  font-weight: bold;
+}
+#fonctionnement i {
+  float: left;
 }
 
 /*--------- Section - Restaurants -------*/
 #restaurant {
-    display: flex;
-    flex-wrap: wrap;
-    background: var(--color-container);
-    min-height: auto;
-    padding: 50px 0px 50px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  background: #F2F2F2;
+  min-height: auto;
+  padding: 50px 0px 50px 0px;
 }
-
-.card-restaurant {
-    overflow: hidden;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    width: 320px;
-    margin: auto;
+#restaurant h2 {
+  width: 320px;
+  margin: auto;
 }
-
-#restaurant>h2 {
-    flex: 100%;
+#restaurant .card-restaurant {
+  border-radius: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: auto;
+  padding: 15px 0px 15px 0px;
 }
-
-.card-text {
-    background: var(--color-card);
-    border-radius: 0px 0px 20px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
+#restaurant .card-text {
+  background: #FFFFFF;
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
 }
-
-.card-restaurant img {
-    height: 144px;
-    width: 100%;
-    object-fit: cover;
-
+#restaurant .card-restaurant img {
+  height: 144px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px 20px 0px 0px;
 }
 
 /*--------- Footer-------*/
 footer {
-    background-color: rgba(53, 53, 53, 255);
-    color: white;
+  background-color: rgb(53, 53, 53);
+  color: white;
 }
-
 footer h3 {
-    font-family: 'Shrikhand', cursive;
+  font-family: "Shrikhand", cursive;
 }
-
 footer ul {
-    display: flex;
-    flex-wrap: wrap;
-    min-height: auto;
-    justify-content: space-between;
-    padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: auto;
+  justify-content: space-between;
+  padding: 20px;
 }
-
 footer ul li {
-    width: auto;
+  width: 190px;
 }
-
 footer ul li .fa-solid {
-    margin-right: 10px;
+  margin-right: 10px;
 }
-
-
 
 @media screen and (min-width: 768px) {
-
-
-
+  #fonctionnement {
+    height: auto;
+  }
+  #fonctionnement h2 {
+    width: 98%;
+  }
+  #restaurant h2 {
+    width: 98%;
+  }
 }
+
+/*# sourceMappingURL=main.css.map */
