@@ -2,6 +2,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /* Variable Couleur */
+/* buttons */
+.btn-purple {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  text-align: center;
+  color: white;
+  border-radius: 30px;
+  background: linear-gradient(2deg, rgb(236, 115, 218) 0%, rgb(184, 98, 220) 96%);
+}
+
+/* css different restaurants */
+#img-food {
+  width: 100%;
+}
+
+#palette-du-gout {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  min-height: 960px;
+  background: #F2F2F2;
+}
+#palette-du-gout .card-header {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+#palette-du-gout h3 {
+  font-weight: 100;
+}
+#palette-du-gout h2 {
+  font-family: "Shrikhand", cursive;
+}
+#palette-du-gout .card-header h2,
+#palette-du-gout i {
+  margin: auto;
+}
+#palette-du-gout .card-box {
+  border-radius: 20px 20px;
+}
+#palette-du-gout .card-menu {
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  background: #FFFFFF;
+  margin: 10px;
+  padding: 10px;
+}
+#palette-du-gout .card-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#palette-du-gout .card-price span {
+  font-weight: bold;
+}
+#palette-du-gout .btn-order {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
 /* Variable Couleur & reglage Layout */
 * {
   font-family: "Raleway", sans-serif;
@@ -19,26 +80,18 @@ body {
 }
 
 /*--------- Header - Logo -------*/
-header img {
+#logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
+  width: 160px;
 }
 
 #reserve {
   background: #F2F2F2;
   text-align: center;
   padding: 40px;
-}
-#reserve button {
-  border: 0;
-  line-height: 2.5;
-  padding: 0 20px;
-  text-align: center;
-  color: white;
-  border-radius: 30px;
-  background: linear-gradient(2deg, rgb(236, 115, 218) 0%, rgb(184, 98, 220) 96%);
 }
 
 /*--------- Section - Fonctionnement -------*/

@@ -5,6 +5,12 @@
 /* Variable Couleur */
 @import "./partials/variables";
 
+/* buttons */
+@import "./partials/buttons";
+
+/* css different restaurants */
+@import "./partials/palette";
+
 /* Variable Couleur & reglage Layout */
 
 
@@ -24,28 +30,20 @@ body {
 }
 
 
+
 /*--------- Header - Logo -------*/
-header img {
+#logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
+    width: 160px;
 }
 
 #reserve {
     background: $color-container;
     text-align: center;
     padding: 40px;
-
-    button {
-        border: 0;
-        line-height: 2.5;
-        padding: 0 20px;
-        text-align: center;
-        color: #ffff;
-        border-radius: 30px;
-        background: linear-gradient(2deg, rgba(236, 115, 218, 1) 0%, rgba(184, 98, 220, 1) 96%);
-    }
 }
 
 /*--------- Section - Fonctionnement -------*/
