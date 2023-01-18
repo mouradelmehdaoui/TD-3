@@ -45,13 +45,40 @@
   background: #FFFFFF;
   margin: 10px;
   padding: 10px;
-  animation: fadein 3s;
+  animation: 3s apparition-progress;
 }
-@keyframes fadein {
-  from {
+#palette-du-gout .card-menu:nth-child(1) {
+  animation-delay: 0.3s;
+}
+#palette-du-gout .card-menu:nth-child(2) {
+  animation-delay: 0.6s;
+}
+#palette-du-gout .card-menu:nth-child(3) {
+  animation-delay: 0.9s;
+}
+#palette-du-gout .card-menu:nth-child(4) {
+  animation-delay: 1.2s;
+}
+#palette-du-gout .card-menu:nth-child(5) {
+  animation-delay: 1.5s;
+}
+#palette-du-gout .card-menu:nth-child(6) {
+  animation-delay: 1.8s;
+}
+#palette-du-gout .card-menu:nth-child(7) {
+  animation-delay: 2.1s;
+}
+#palette-du-gout .card-menu:nth-child(8) {
+  animation-delay: 2.4s;
+}
+#palette-du-gout .card-menu:nth-child(9) {
+  animation-delay: 2.7s;
+}
+@keyframes apparition-progress {
+  0%, 60% {
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
   }
 }

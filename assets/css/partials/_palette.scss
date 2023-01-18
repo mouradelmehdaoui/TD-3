@@ -1,3 +1,6 @@
+$total: 9;
+
+
 #img-food {
     width: 100%;
 }
@@ -34,14 +37,24 @@
         background: $color-card;
         margin: 10px;
         padding: 10px;
-        animation: fadein 3s;
+        animation: 3s apparition-progress;
+
     }
-    @keyframes fadein {
-        from {
+
+    @for $i from 1 through $total {
+        .card-menu:nth-child(#{$i}) {
+            animation-delay: $i * 0.3s;
+        }
+    }
+
+    @keyframes apparition-progress {
+
+        0%,
+        60% {
             opacity: 0;
         }
 
-        to {
+        100% {
             opacity: 1;
         }
     }
