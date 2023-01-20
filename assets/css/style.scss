@@ -96,6 +96,7 @@ body {
         width: 320px;
         margin: auto;
         padding: 15px 0px 15px 0px;
+        cursor: pointer;
     }
 
     .card-text {
@@ -120,6 +121,7 @@ body {
 footer {
     background-color: $color-footer;
     color: white;
+    width: 100%;
 
     h3 {
         font-family: $font-logo;

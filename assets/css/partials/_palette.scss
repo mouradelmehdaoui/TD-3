@@ -1,5 +1,6 @@
+// Delcration Variable 
 $total: 9;
-
+//
 
 #img-food {
     width: 100%;
@@ -9,8 +10,11 @@ $total: 9;
 
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
-    min-height: 960px;
+    height: auto;
     background: $color-container;
+    width: 100%;
+    position: relative;
+    margin-top: -40px;
 
     .card-header {
         display: flex;
@@ -20,6 +24,7 @@ $total: 9;
 
     h3 {
         font-weight: 100;
+        margin-bottom: 25px;
     }
 
     h2 {
@@ -72,7 +77,10 @@ $total: 9;
     .btn-order {
         display: flex;
         justify-content: center;
-        margin: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+
     }
 
 }

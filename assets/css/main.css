@@ -21,8 +21,11 @@
 #palette-du-gout {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-  min-height: 960px;
+  height: auto;
   background: #F2F2F2;
+  width: 100%;
+  position: relative;
+  margin-top: -40px;
 }
 #palette-du-gout .card-header {
   display: flex;
@@ -31,6 +34,7 @@
 }
 #palette-du-gout h3 {
   font-weight: 100;
+  margin-bottom: 25px;
 }
 #palette-du-gout h2 {
   font-family: "Shrikhand", cursive;
@@ -97,9 +101,7 @@
 #palette-du-gout .btn-order {
   display: flex;
   justify-content: center;
-  margin: 30px;
 }
-
 /* Variable Couleur & reglage Layout */
 * {
   font-family: "Raleway", sans-serif;
@@ -177,6 +179,7 @@ body {
   width: 320px;
   margin: auto;
   padding: 15px 0px 15px 0px;
+  cursor: pointer;
 }
 #restaurant .card-text {
   background: #FFFFFF;
@@ -197,6 +200,7 @@ body {
 footer {
   background-color: rgb(53, 53, 53);
   color: white;
+  width: 100%;
 }
 footer h3 {
   font-family: "Shrikhand", cursive;
