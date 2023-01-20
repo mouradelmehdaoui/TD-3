@@ -1,0 +1,86 @@
+// Delcration Variable 
+$total: 9;
+//
+
+#img-food {
+    width: 100%;
+}
+
+#palette-du-gout {
+
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: auto;
+    background: $color-container;
+    width: 100%;
+    position: relative;
+    margin-top: -40px;
+
+    .card-header {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    h3 {
+        font-weight: 100;
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        font-family: $font-logo;
+    }
+
+    .card-header h2,
+    i {
+        margin: auto;
+    }
+
+    .card-menu {
+        border-radius: 15px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 5%);
+        background: $color-card;
+        margin: 10px;
+        padding: 10px;
+        animation: 3s show;
+        opacity: 0;
+        animation-name: cascade;
+        animation-duration: 0.85s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        animation-direction: alternate;
+    }
+
+    @for $i from 1 through $total {
+        .card-menu:nth-child(#{$i}) {
+            animation-delay: $i * 0.2s;
+        }
+    }
+
+    @keyframes cascade {
+        to {
+            transform: translate(0, -15px);
+            opacity: 1;
+        }
+    }
+
+    .card-price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card-price span {
+        font-weight: bold;
+    }
+
+    .btn-order {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) {
+
+    }
+
+}
