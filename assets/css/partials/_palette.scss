@@ -37,24 +37,24 @@ $total: 9;
         background: $color-card;
         margin: 10px;
         padding: 10px;
-        animation: 3s apparition-progress;
-
+        animation: 3s show;
+        opacity: 0;
+        animation-name: cascade;
+        animation-duration: 0.85s;
+        animation-fill-mode: forwards;
+        animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        animation-direction: alternate;
     }
 
     @for $i from 1 through $total {
         .card-menu:nth-child(#{$i}) {
-            animation-delay: $i * 0.3s;
+            animation-delay: $i * 0.2s;
         }
     }
 
-    @keyframes apparition-progress {
-
-        0%,
-        60% {
-            opacity: 0;
-        }
-
-        100% {
+    @keyframes cascade {
+        to {
+            transform: translate(0, -15px);
             opacity: 1;
         }
     }
