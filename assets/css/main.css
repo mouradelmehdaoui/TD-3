@@ -1,5 +1,5 @@
 /*# sourceMappingURL=main.css.map */
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /* Variable Couleur */
 /* buttons */
@@ -141,7 +141,7 @@ body {
   align-items: center;
   padding: 50px 0px 50px 0px;
 }
-#fonctionnement h2 {
+#fonctionnement h1 {
   width: 320px;
   margin: auto;
 }
@@ -168,9 +168,9 @@ body {
   min-height: auto;
   padding: 50px 0px 50px 0px;
 }
-#restaurant h2 {
-  width: 320px;
-  margin: auto;
+#restaurant h1 {
+  width: 100%;
+  margin-left: 25px;
 }
 #restaurant .card-restaurant {
   border-radius: 20px 20px;
@@ -208,7 +208,6 @@ footer h3 {
 footer ul {
   display: flex;
   flex-wrap: wrap;
-  min-height: auto;
   justify-content: space-between;
   padding: 20px;
 }
