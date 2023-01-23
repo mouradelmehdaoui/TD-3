@@ -11,8 +11,8 @@
 /* animations */
 @import "./partials/_animations";
 
-/* css different restaurants */
-@import "./partials/palette";
+/* css restaurants la-palette-du-gout*/
+@import "./partials/la-palette-du-gout";
 
 /* Variable Couleur & reglage Layout */
 
@@ -43,10 +43,19 @@ body {
     width: 160px;
 }
 
+main {
+    a, a:visited, a:hover, a:active {
+        color: inherit;
+      }
+}
+
 #reserve {
     background: $color-container;
     text-align: center;
     padding: 40px;
+    h1, p, button {
+        margin-top: 15px;
+    }
 }
 
 /*--------- Section - Fonctionnement -------*/
@@ -58,7 +67,7 @@ body {
     align-items: center;
     padding: 50px 0px 50px 0px;
 
-    h1 {
+    h2 {
         width: 320px;
         margin: auto;
     }
@@ -68,16 +77,23 @@ body {
     .store {
         border-radius: 20px;
         box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
-        padding: 25px;
-        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
         width: 320px;
+        height: 70px;
         margin: auto;
-        font-weight: bold;
+
+        p{
+            font-weight: bold;
+            width: 70%;
+        }
+        .fa-bars {
+            margin-left: -25px
+        }
     }
 
-    i {
-        float: left;
-    }
+   
 
 }
 
@@ -89,7 +105,7 @@ body {
     min-height: auto;
     padding: 50px 0px 50px 0px;
 
-    h1 {
+    h2 {
         width: 100%;
         margin-left: 25px;
     }
@@ -130,6 +146,7 @@ footer {
 
     h3 {
         font-family: $font-logo;
+        padding: 25px 25px 0;
     }
 
     ul {
@@ -140,7 +157,8 @@ footer {
     }
 
     ul li {
-        width: 190px;
+        min-width: 200px;
+        padding: 5px;
     }
 
     ul li .fa-solid {

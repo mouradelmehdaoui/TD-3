@@ -1,7 +1,12 @@
+// Delcration Variable //
+$total: 9;
+
+
+/*--------- Animation Coeur couleur degrader Acceuil  -------*/
+
 .heart {
   position: relative;
   font-size: 1.5rem;
-  font-weight: 400;
 }
 .heart::before {
   transition: 0.3s ease-in-out;
@@ -26,4 +31,34 @@
 }
 .heart:hover::after {
   opacity: 1;
+}
+
+/*--------- Animation Menu Apparition Progressive Restaurant  -------*/
+
+.card-menu {
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 5%);
+  background: $color-card;
+  margin: 10px;
+  padding: 10px;
+  animation: 3s show;
+  opacity: 0;
+  animation-name: cascade;
+  animation-duration: 0.85s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-direction: alternate;
+}
+
+@for $i from 1 through $total {
+  .card-menu:nth-child(#{$i}) {
+      animation-delay: $i * 0.2s;
+  }
+}
+
+@keyframes cascade {
+  to {
+      transform: translate(0, -15px);
+      opacity: 1;
+  }
 }
