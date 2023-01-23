@@ -1,0 +1,53 @@
+
+#img-food {
+    width: 100%;
+}
+
+#palette-du-gout {
+
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    height: auto;
+    background: $color-container;
+    width: 100%;
+    position: relative;
+    margin-top: -40px;
+
+    .card-header {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    h3 {
+        font-weight: 100;
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        font-family: $font-logo;
+    }
+
+    .card-header h2,
+    i {
+        margin: auto;
+    }
+
+    .card-price {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .card-price span {
+        font-weight: bold;
+    }
+
+    .btn-order {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) {}
+
+}
