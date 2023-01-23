@@ -65,6 +65,19 @@ main {
     }
 }
 
+/*--------- Section - Localisation -------*/
+
+.location {
+
+    height: 50px;
+    background: rgba(234, 234, 234, 255);
+    text-align: center;
+    padding: 16px;
+
+    i {
+        margin-right: 15px;
+    }
+}
 
 /*--------- Section - Fonctionnement -------*/
 
@@ -225,10 +238,6 @@ footer {
 
     #fonctionnement {
         height: auto;
-
-        h2 {
-            width: 98%;
-        }
     }
 
     #restaurant {
