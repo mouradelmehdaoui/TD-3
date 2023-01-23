@@ -43,20 +43,28 @@ body {
     width: 160px;
 }
 
-main {
-    a, a:visited, a:hover, a:active {
-        color: inherit;
-      }
-}
-
 #reserve {
     background: $color-container;
     text-align: center;
     padding: 40px;
-    h1, p, button {
+
+    h1,
+    p,
+    button {
         margin-top: 15px;
     }
 }
+
+main {
+
+    a,
+    a:visited,
+    a:hover,
+    a:active {
+        color: inherit;
+    }
+}
+
 
 /*--------- Section - Fonctionnement -------*/
 
@@ -84,16 +92,35 @@ main {
         height: 70px;
         margin: auto;
 
-        p{
+        p {
             font-weight: bold;
             width: 70%;
         }
+
         .fa-bars {
             margin-left: -25px
         }
+
+        i {
+            color: grey;
+        }
     }
 
-   
+    .numberCircle {
+        border-radius: 50%;
+        height: 25px;
+        display: inline-flex;
+        background: $primary;
+    }
+
+    .numberCircle span {
+        color: #ffff;
+        text-align: center;
+        font: 12px Arial, sans-serif;
+        width: 25px;
+        display: inline-block;
+        margin: auto;
+    }
 
 }
 

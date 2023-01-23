@@ -172,17 +172,22 @@ body {
   width: 160px;
 }
 
-main a, main a:visited, main a:hover, main a:active {
-  color: inherit;
-}
-
 #reserve {
   background: #F2F2F2;
   text-align: center;
   padding: 40px;
 }
-#reserve h1, #reserve p, #reserve button {
+#reserve h1,
+#reserve p,
+#reserve button {
   margin-top: 15px;
+}
+
+main a,
+main a:visited,
+main a:hover,
+main a:active {
+  color: inherit;
 }
 
 /*--------- Section - Fonctionnement -------*/
@@ -219,6 +224,25 @@ main a, main a:visited, main a:hover, main a:active {
 #fonctionnement .menu .fa-bars,
 #fonctionnement .store .fa-bars {
   margin-left: -25px;
+}
+#fonctionnement .phone i,
+#fonctionnement .menu i,
+#fonctionnement .store i {
+  color: grey;
+}
+#fonctionnement .numberCircle {
+  border-radius: 50%;
+  height: 25px;
+  display: inline-flex;
+  background: #9356DC;
+}
+#fonctionnement .numberCircle span {
+  color: white;
+  text-align: center;
+  font: 12px Arial, sans-serif;
+  width: 25px;
+  display: inline-block;
+  margin: auto;
 }
 
 /*--------- Section - Restaurants -------*/
