@@ -75,6 +75,11 @@ main {
     align-items: center;
     padding: 50px 0px 50px 0px;
 
+    article {
+        position: relative;
+        margin: auto;
+    }
+
     h2 {
         width: 320px;
         margin: auto;
@@ -111,6 +116,9 @@ main {
         height: 25px;
         display: inline-flex;
         background: $primary;
+        position: absolute;
+        top: 25px;
+        left: -12px
     }
 
     .numberCircle span {
@@ -118,7 +126,6 @@ main {
         text-align: center;
         font: 12px Arial, sans-serif;
         width: 25px;
-        display: inline-block;
         margin: auto;
     }
 
@@ -145,6 +152,7 @@ main {
         margin: auto;
         padding: 15px 0px 15px 0px;
         cursor: pointer;
+        position: relative;
     }
 
     .card-text {
@@ -161,6 +169,26 @@ main {
         width: 100%;
         object-fit: cover;
         border-radius: 20px 20px 0px 0px;
+    }
+
+    .news {
+        width: 80px;
+        height: 30px;
+        background: #99E2D0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 15px;
+        top: 25px;
+        color: #347968;
+        border-radius: 3px;
+        opacity: 0.8;
+        font-weight: bold;
+    }
+
+    .news:hover {
+        opacity: 1;
     }
 
 }

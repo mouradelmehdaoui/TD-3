@@ -198,6 +198,10 @@ main a:active {
   align-items: center;
   padding: 50px 0px 50px 0px;
 }
+#fonctionnement article {
+  position: relative;
+  margin: auto;
+}
 #fonctionnement h2 {
   width: 320px;
   margin: auto;
@@ -235,13 +239,15 @@ main a:active {
   height: 25px;
   display: inline-flex;
   background: #9356DC;
+  position: absolute;
+  top: 25px;
+  left: -12px;
 }
 #fonctionnement .numberCircle span {
   color: white;
   text-align: center;
   font: 12px Arial, sans-serif;
   width: 25px;
-  display: inline-block;
   margin: auto;
 }
 
@@ -265,6 +271,7 @@ main a:active {
   margin: auto;
   padding: 15px 0px 15px 0px;
   cursor: pointer;
+  position: relative;
 }
 #restaurant .card-text {
   background: #FFFFFF;
@@ -279,6 +286,24 @@ main a:active {
   width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
+}
+#restaurant .news {
+  width: 80px;
+  height: 30px;
+  background: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 15px;
+  top: 25px;
+  color: #347968;
+  border-radius: 3px;
+  opacity: 0.8;
+  font-weight: bold;
+}
+#restaurant .news:hover {
+  opacity: 1;
 }
 
 /*--------- Footer-------*/
