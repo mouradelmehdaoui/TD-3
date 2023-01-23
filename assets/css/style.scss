@@ -8,6 +8,9 @@
 /* buttons */
 @import "./partials/buttons";
 
+/* animations */
+@import "./partials/_animations";
+
 /* css different restaurants */
 @import "./partials/palette";
 
@@ -54,6 +57,7 @@ body {
     height: 430px;
     align-items: center;
     padding: 50px 0px 50px 0px;
+
     h1 {
         width: 320px;
         margin: auto;
@@ -70,6 +74,7 @@ body {
         margin: auto;
         font-weight: bold;
     }
+
     i {
         float: left;
     }
@@ -147,7 +152,8 @@ footer {
 
     #fonctionnement {
         height: auto;
-        h2{
+
+        h2 {
             width: 98%;
         }
     }
