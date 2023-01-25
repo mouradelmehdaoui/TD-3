@@ -16,7 +16,6 @@
 
 /* Variable Couleur & reglage Layout */
 
-
 * {
     font-family: $font;
     font-style: normal;
@@ -241,6 +240,11 @@ footer {
 
     #fonctionnement {
         height: auto;
+      
+            article {
+                padding: 15px 0px 15px 0px;
+            }
+        
     }
 
     #restaurant {
