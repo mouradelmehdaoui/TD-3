@@ -75,6 +75,16 @@ main {
     i {
         margin-right: 15px;
     }
+
+    .city {
+        background: transparent;
+        border: none;
+        outline: none;
+    }
+
+    input::placeholder {
+        color: black;
+    }
 }
 
 /*--------- Section - Fonctionnement -------*/
@@ -91,13 +101,19 @@ main {
         margin: auto;
     }
 
-    .phone:hover, .menu:hover,.store:hover {
-        background: rgba(245,237,255,255);
+    .phone:hover,
+    .menu:hover,
+    .store:hover {
+        background: rgb(250 246 255);
+
+        i {
+            color: $primary;
+        }
     }
 
     h2 {
-        width: 320px;
-        margin: auto;
+        width: 100%;
+        margin-left: 30px;
     }
 
     .phone,
@@ -110,7 +126,6 @@ main {
         align-items: center;
         width: 320px;
         height: 70px;
-        margin: auto;
 
         p {
             font-weight: bold;
@@ -156,7 +171,7 @@ main {
 
     h2 {
         width: 100%;
-        margin-left: 25px;
+        margin-left: 30px;
     }
 
     .card-restaurant {
@@ -198,12 +213,7 @@ main {
         top: 25px;
         color: #347968;
         border-radius: 3px;
-        opacity: 0.8;
         font-weight: bold;
-    }
-
-    .news:hover {
-        opacity: 1;
     }
 
 }
@@ -240,11 +250,15 @@ footer {
 
     #fonctionnement {
         height: auto;
-      
-            article {
-                padding: 15px 0px 15px 0px;
-            }
-        
+
+        article {
+            padding: 15px 0px 15px 0px;
+        }
+
+        .numberCircle {
+            top: 40px
+        }
+
     }
 
     #restaurant {

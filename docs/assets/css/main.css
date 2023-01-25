@@ -11,6 +11,12 @@
   color: white;
   border-radius: 30px;
   background: linear-gradient(2deg, rgb(236, 115, 218) 0%, rgb(184, 98, 220) 96%);
+  transition: 0.4s linear;
+  cursor: pointer;
+}
+
+.btn-purple:hover {
+  background: linear-gradient(2deg, #f78de7 0%, rgb(205, 127, 238) 96%);
 }
 
 /* animations */
@@ -108,6 +114,7 @@
 /* css restaurants la-palette-du-gout*/
 #img-food {
   width: 100%;
+  max-height: 400px;
 }
 
 #palette-du-gout {
@@ -200,6 +207,14 @@ main a:active {
 #location i {
   margin-right: 15px;
 }
+#location .city {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+#location input::placeholder {
+  color: black;
+}
 
 /*--------- Section - Fonctionnement -------*/
 #fonctionnement {
@@ -213,12 +228,19 @@ main a:active {
   position: relative;
   margin: auto;
 }
-#fonctionnement .phone:hover, #fonctionnement .menu:hover, #fonctionnement .store:hover {
-  background: rgb(245, 237, 255);
+#fonctionnement .phone:hover,
+#fonctionnement .menu:hover,
+#fonctionnement .store:hover {
+  background: rgb(250, 246, 255);
+}
+#fonctionnement .phone:hover i,
+#fonctionnement .menu:hover i,
+#fonctionnement .store:hover i {
+  color: #9356DC;
 }
 #fonctionnement h2 {
-  width: 320px;
-  margin: auto;
+  width: 100%;
+  margin-left: 30px;
 }
 #fonctionnement .phone,
 #fonctionnement .menu,
@@ -230,7 +252,6 @@ main a:active {
   align-items: center;
   width: 320px;
   height: 70px;
-  margin: auto;
 }
 #fonctionnement .phone p,
 #fonctionnement .menu p,
@@ -275,7 +296,7 @@ main a:active {
 }
 #restaurant h2 {
   width: 100%;
-  margin-left: 25px;
+  margin-left: 30px;
 }
 #restaurant .card-restaurant {
   border-radius: 20px 20px;
@@ -313,11 +334,7 @@ main a:active {
   top: 25px;
   color: #347968;
   border-radius: 3px;
-  opacity: 0.8;
   font-weight: bold;
-}
-#restaurant .news:hover {
-  opacity: 1;
 }
 
 /*--------- Footer-------*/
@@ -350,6 +367,9 @@ footer ul li .fa-solid {
   }
   #fonctionnement article {
     padding: 15px 0px 15px 0px;
+  }
+  #fonctionnement .numberCircle {
+    top: 40px;
   }
   #restaurant h2 {
     width: 98%;

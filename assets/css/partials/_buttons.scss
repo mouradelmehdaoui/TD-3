@@ -6,5 +6,11 @@
     color: #ffff;
     border-radius: 30px;
     background: linear-gradient(2deg, rgba(236, 115, 218, 1) 0%, rgba(184, 98, 220, 1) 96%);
+    transition: 0.4s linear;
+    cursor: pointer;
+}
+
+.btn-purple:hover {
+    background: linear-gradient(2deg, #f78de7 0%, rgb(205, 127, 238) 96%);
 }
 
