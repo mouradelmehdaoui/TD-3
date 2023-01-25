@@ -201,8 +201,9 @@ main a:active {
 #location {
   height: 50px;
   background: rgb(234, 234, 234);
-  text-align: center;
-  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #location i {
   margin-right: 15px;
@@ -315,6 +316,7 @@ main a:active {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
+  margin-top: -4px;
 }
 #restaurant .card-restaurant img {
   height: 144px;
