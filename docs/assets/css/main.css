@@ -207,6 +207,7 @@ main a:active {
 }
 #location i {
   margin-right: 15px;
+  margin-left: 60px;
 }
 #location .city {
   background: transparent;
