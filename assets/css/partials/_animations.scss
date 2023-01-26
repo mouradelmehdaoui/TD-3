@@ -35,6 +35,8 @@ $total: 9;
 /*--------- Animation Menu Apparition Progressive Restaurant  -------*/
 
 .card-menu {
+  cursor: pointer;
+  min-width: 350px;
   border-radius: 15px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 5%);
   background: $color-card;
@@ -60,4 +62,40 @@ $total: 9;
       transform: translate(0, -15px);
       opacity: 1;
   }
+}
+
+
+.card-menu::after {
+  background-color: red;
+  content: "\f058";
+  color: $tertiaire;
+  font-family: FontAwesome;
+  display: inline-block;
+  position: absolute;
+  opacity: 1;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+
+}
+
+.card-menu:hover {
+
+    padding-right: 50px;
+    padding-left:8px;
+  
+}
+.card-menu:hover::after {
+  margin: -5px 15px;
+  right: 0px;
+  animation: rotate 0.3s linear;
+  opacity: 1;
+  right: 10px;
+}
+
+@keyframes rotate{
+  to{
+    transform: rotate(3.142rad);
+  }
+
 }
