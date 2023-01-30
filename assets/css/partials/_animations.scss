@@ -36,7 +36,7 @@ $total: 9;
 
 .card-menu {
   cursor: pointer;
-  min-width: 350px;
+  width: 350px;
   border-radius: 15px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 5%);
   background: $color-card;
@@ -49,7 +49,11 @@ $total: 9;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   animation-direction: alternate;
+  p {
+    text-overflow: ellipsis;
+  }
 }
+
 
 @for $i from 1 through $total {
   .card-menu:nth-child(#{$i}) {
@@ -81,9 +85,8 @@ $total: 9;
 
 .card-menu:hover {
 
-    padding-right: 50px;
+    //padding-right: 50px;
     padding-left:8px;
-  
 }
 .card-menu:hover::after {
   margin: -5px 15px;

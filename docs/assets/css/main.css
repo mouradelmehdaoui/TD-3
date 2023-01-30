@@ -57,7 +57,7 @@
 /*--------- Animation Menu Apparition Progressive Restaurant  -------*/
 .card-menu {
   cursor: pointer;
-  min-width: 350px;
+  width: 350px;
   border-radius: 15px;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
   background: #FFFFFF;
@@ -70,6 +70,9 @@
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   animation-direction: alternate;
+}
+.card-menu p {
+  text-overflow: ellipsis;
 }
 
 .card-menu:nth-child(1) {
@@ -128,7 +131,6 @@
 }
 
 .card-menu:hover {
-  padding-right: 50px;
   padding-left: 8px;
 }
 
@@ -179,6 +181,16 @@
 }
 #palette-du-gout article h3 {
   min-width: 150px;
+  position: relative;
+  padding: 8px;
+}
+#palette-du-gout article h3::after {
+  content: "";
+  position: absolute;
+  left: 6%;
+  bottom: 0;
+  width: 35%;
+  border-bottom: 3px solid #99E2D0;
 }
 #palette-du-gout .card-header {
   display: flex;
