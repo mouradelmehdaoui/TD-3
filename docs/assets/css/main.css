@@ -175,6 +175,7 @@
 #palette-du-gout article {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 #palette-du-gout article h3 {
   min-width: 150px;
