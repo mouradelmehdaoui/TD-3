@@ -7,16 +7,18 @@ $total: 9;
   position: relative;
   font-size: 1.5rem;
 }
+
 .heart::before {
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
+
 .heart::after {
-  position:absolute;
+  position: absolute;
   left: 0;
   transition: 0.3s ease-in-out;
   content: "\f004";
-  background-image: linear-gradient(#9356DC, #FF79DA)!important;
+  background-image: linear-gradient(#9356DC, #FF79DA) !important;
   font-weight: 600;
   color: transparent;
   background-clip: text;
@@ -28,77 +30,96 @@ $total: 9;
 .heart:hover::before {
   opacity: 0;
 }
+
 .heart:hover::after {
   opacity: 1;
 }
 
 /*--------- Animation Menu Apparition Progressive Restaurant  -------*/
 
-.card-menu {
-  cursor: pointer;
-  width: 350px;
-  border-radius: 15px;
-  box-shadow: 0 3px 10px rgb(0 0 0 / 5%);
-  background: $color-card;
-  margin: 10px;
-  padding: 10px;
-  animation: 3s show;
+
+.card-body {
   opacity: 0;
   animation-name: cascade;
-  animation-duration: 0.85s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   animation-direction: alternate;
-  p {
-    text-overflow: ellipsis;
-  }
-}
 
+}
 
 @for $i from 1 through $total {
   .card-menu:nth-child(#{$i}) {
-      animation-delay: $i * 0.2s;
+    animation-delay: $i * 0.3s;
   }
 }
 
 @keyframes cascade {
   to {
-      transform: translate(0, -15px);
-      opacity: 1;
+    transform: translate(0, -15px);
+    opacity: 1;
   }
 }
 
+/*--------- Animation Menu Animation Checking  -------*/
 
-.card-menu::after {
-  background-color: red;
-  content: "\f058";
-  color: $tertiaire;
-  font-family: FontAwesome;
-  display: inline-block;
-  position: absolute;
-  opacity: 1;  
-  top: 14px;
-  right: -20px;
-  transition: 0.5s;
+.card-main {
+  display: flex;
+  min-width: 350px;
+  margin: 0px 10px 10px 0px;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 5%);
+  background: $color-card;
+  overflow: hidden;
 
-}
-
-.card-menu:hover {
-
-    //padding-right: 50px;
-    padding-left:8px;
-}
-.card-menu:hover::after {
-  margin: -5px 15px;
-  right: 0px;
-  animation: rotate 0.3s linear;
-  opacity: 1;
-  right: 10px;
-}
-
-@keyframes rotate{
-  to{
-    transform: rotate(3.142rad);
+  &>.card-price {
+    align-items: center;
   }
 
+  &:hover>.box {
+    width: 5em;
+
+    .check>i {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.card-menu {
+  flex-grow: 1;
+  width: 10em;
+  cursor: pointer;
+  padding: 5px;
+
+  p,
+  h4 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+.card-price {
+  width: 2em;
+}
+
+.box {
+  display: flex;
+  width: 0;
+  background-color: $tertiaire;
+  transition: all 1s;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+
+  .check {
+    margin: auto;
+    color: white;
+    background-color: $tertiaire;
+
+    i {
+      transition: all 0.4s;
+      transition-timing-function: ease-in-out;
+    }
+  }
 }

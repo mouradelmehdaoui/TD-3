@@ -55,60 +55,49 @@
 }
 
 /*--------- Animation Menu Apparition Progressive Restaurant  -------*/
-.card-menu {
-  cursor: pointer;
-  width: 350px;
-  border-radius: 15px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
-  background: #FFFFFF;
-  margin: 10px;
-  padding: 10px;
-  animation: 3s show;
+.card-body {
   opacity: 0;
   animation-name: cascade;
-  animation-duration: 0.85s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   animation-direction: alternate;
 }
-.card-menu p {
-  text-overflow: ellipsis;
-}
 
 .card-menu:nth-child(1) {
-  animation-delay: 0.2s;
+  animation-delay: 0.3s;
 }
 
 .card-menu:nth-child(2) {
-  animation-delay: 0.4s;
-}
-
-.card-menu:nth-child(3) {
   animation-delay: 0.6s;
 }
 
+.card-menu:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
 .card-menu:nth-child(4) {
-  animation-delay: 0.8s;
-}
-
-.card-menu:nth-child(5) {
-  animation-delay: 1s;
-}
-
-.card-menu:nth-child(6) {
   animation-delay: 1.2s;
 }
 
+.card-menu:nth-child(5) {
+  animation-delay: 1.5s;
+}
+
+.card-menu:nth-child(6) {
+  animation-delay: 1.8s;
+}
+
 .card-menu:nth-child(7) {
-  animation-delay: 1.4s;
+  animation-delay: 2.1s;
 }
 
 .card-menu:nth-child(8) {
-  animation-delay: 1.6s;
+  animation-delay: 2.4s;
 }
 
 .card-menu:nth-child(9) {
-  animation-delay: 1.8s;
+  animation-delay: 2.7s;
 }
 
 @keyframes cascade {
@@ -117,36 +106,62 @@
     opacity: 1;
   }
 }
-.card-menu::after {
-  background-color: red;
-  content: "\f058";
-  color: #99E2D0;
-  font-family: FontAwesome;
-  display: inline-block;
-  position: absolute;
-  opacity: 1;
-  top: 14px;
-  right: -20px;
-  transition: 0.5s;
+/*--------- Animation Menu Animation Checking  -------*/
+.card-main {
+  display: flex;
+  min-width: 350px;
+  margin: 0px 10px 10px 0px;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  background: #FFFFFF;
+  overflow: hidden;
+}
+.card-main > .card-price {
+  align-items: center;
+}
+.card-main:hover > .box {
+  width: 5em;
+}
+.card-main:hover > .box .check > i {
+  transform: rotate(360deg);
 }
 
-.card-menu:hover {
-  padding-left: 8px;
+.card-menu {
+  flex-grow: 1;
+  width: 10em;
+  cursor: pointer;
+  padding: 5px;
+}
+.card-menu p,
+.card-menu h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.card-menu:hover::after {
-  margin: -5px 15px;
-  right: 0px;
-  animation: rotate 0.3s linear;
-  opacity: 1;
-  right: 10px;
+.card-price {
+  width: 2em;
 }
 
-@keyframes rotate {
-  to {
-    transform: rotate(3.142rad);
-  }
+.box {
+  display: flex;
+  width: 0;
+  background-color: #99E2D0;
+  transition: all 1s;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
+.box .check {
+  margin: auto;
+  color: white;
+  background-color: #99E2D0;
+}
+.box .check i {
+  transition: all 0.4s;
+  transition-timing-function: ease-in-out;
+}
+
 /* css restaurants la-palette-du-gout*/
 #img-food {
   width: 100%;
@@ -169,23 +184,23 @@
 }
 #palette-du-gout h3 {
   font-weight: 100;
-  margin-bottom: 25px;
+  margin: 0px 0px 25px 10px;
 }
 #palette-du-gout h2 {
   font-family: "Shrikhand", cursive;
 }
-#palette-du-gout article {
+#palette-du-gout .card-body {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  max-width: 1260px;
+  margin: 10px;
+  max-width: 1080px;
 }
-#palette-du-gout article h3 {
+#palette-du-gout .card-body h3 {
   min-width: 150px;
   position: relative;
   padding: 8px;
 }
-#palette-du-gout article h3::after {
+#palette-du-gout .card-body h3::after {
   content: "";
   position: absolute;
   left: 6%;
@@ -258,12 +273,19 @@ body {
 }
 
 /*--------- Header - Logo -------*/
-#logo {
+header {
+  display: flex;
+  align-items: center;
+}
+header #logo {
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
   width: 160px;
+}
+header #previous {
+  margin-left: 10px;
 }
 
 #reserve {

@@ -33,13 +33,23 @@ body {
 
 
 /*--------- Header - Logo -------*/
-#logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    width: 160px;
+
+header {
+    display: flex;
+    align-items: center;
+    #logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        width: 160px;
+    }
+
+    #previous{
+        margin-left: 10px;
+    }
 }
+
 
 #reserve {
     background: $color-container;
@@ -54,7 +64,6 @@ body {
 }
 
 main {
-
     a,
     a:visited,
     a:hover,
