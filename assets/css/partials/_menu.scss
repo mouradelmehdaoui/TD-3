@@ -21,8 +21,20 @@
     h3 {
         font-weight: 100;
         margin: 0px 0px 25px 10px;
-        
+
     }
+
+    article{
+        position: relative;
+        h3::after {
+            content: "";
+            position: absolute;
+            left: 10px;
+            top: 20px;
+            width: 56px;
+            border-bottom: 3px solid #99E2D0;
+        }
+    } 
 
     h2 {
         font-family: $font-logo;
@@ -33,21 +45,13 @@
         flex-wrap: wrap;
         margin-left: 10px;
         max-width: 1080px;
+
         h3 {
             min-width: 150px;
             position: relative;
             padding: 8px;
-
         }
 
-        h3::after {
-            content: "";
-            position: absolute;
-            left: 6%;
-            bottom: 0;
-            width: 35%;
-            border-bottom: 3px solid $tertiaire;
-        }
     }
 
     .card-header {
@@ -78,41 +82,10 @@
 
     @media screen and (min-width: 768px) {
 
-        article {
-            h3 {
-                width: 100%;
-            }
-
-            h3::after {
-                content: "";
-                position: absolute;
-                left: 9px;
-                bottom: 0;
-                width: 7%;
-                border-bottom: 3px solid $tertiaire;
-            }
-        }
-
     }
 
 
     @media screen and (min-width: 992px) {
-
-        article {
-
-            h3 {
-                width: 100%;
-            }
-
-            h3::after {
-                content: "";
-                position: absolute;
-                left: 9px;
-                bottom: 0;
-                width: 4.5%;
-                border-bottom: 3px solid $tertiaire;
-            }
-        }
 
     }
 
