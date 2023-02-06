@@ -272,6 +272,11 @@ body {
   margin: auto;
 }
 
+a {
+  all: unset;
+  cursor: pointer !important;
+}
+
 /*--------- Header - Logo -------*/
 header {
   display: flex;

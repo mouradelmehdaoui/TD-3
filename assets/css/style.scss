@@ -26,9 +26,15 @@
     text-decoration: none;
 }
 
+
 body {
     width: 100%;
     margin: auto;
+}
+
+a {
+    all: unset;
+    cursor: pointer !important;
 }
 
 
@@ -37,6 +43,7 @@ body {
 header {
     display: flex;
     align-items: center;
+
     #logo {
         display: block;
         margin-left: auto;
@@ -45,8 +52,9 @@ header {
         width: 160px;
     }
 
-    #previous{
+    #previous {
         margin-left: 10px;
+
         i {
             color: black;
         }
@@ -67,6 +75,7 @@ header {
 }
 
 main {
+
     a,
     a:visited,
     a:hover,
