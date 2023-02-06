@@ -232,6 +232,17 @@
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  #palette-du-gout .card-body {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #palette-du-gout .card-body {
+    max-width: 1080px;
+  }
+}
+
 /* Variable Couleur & reglage Layout */
 * {
   font-family: "Raleway", sans-serif;
