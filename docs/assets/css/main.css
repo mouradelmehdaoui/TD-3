@@ -287,6 +287,9 @@ header #logo {
 header #previous {
   margin-left: 10px;
 }
+header #previous i {
+  color: black;
+}
 
 #reserve {
   background: #F2F2F2;
