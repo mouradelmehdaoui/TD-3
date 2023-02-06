@@ -37,6 +37,7 @@ body {
 header {
     display: flex;
     align-items: center;
+
     #logo {
         display: block;
         margin-left: auto;
@@ -45,8 +46,9 @@ header {
         width: 160px;
     }
 
-    #previous{
+    #previous {
         margin-left: 10px;
+
         i {
             color: black;
         }
@@ -67,6 +69,7 @@ header {
 }
 
 main {
+
     a,
     a:visited,
     a:hover,
