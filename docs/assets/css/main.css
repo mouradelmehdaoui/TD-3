@@ -192,7 +192,7 @@
 #palette-du-gout .card-body {
   display: flex;
   flex-wrap: wrap;
-  margin: 10px;
+  margin-left: 10px;
   max-width: 1080px;
 }
 #palette-du-gout .card-body h3 {
