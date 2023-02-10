@@ -121,7 +121,7 @@
   align-items: center;
 }
 .card-main:hover > .box {
-  width: 5em;
+  width: 3em;
 }
 .card-main:hover > .box .check > i {
   transform: rotate(360deg);
