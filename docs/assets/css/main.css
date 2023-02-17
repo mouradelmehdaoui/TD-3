@@ -163,6 +163,19 @@
 }
 
 /*--------- Animation Loading Accueil  -------*/
+.animation-accueil {
+  animation: 5s accueil;
+  animation-fill-mode: forwards;
+}
+
+@keyframes accueil {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .lds-dual-ring {
   display: inline-block;
   width: 80px;
