@@ -79,6 +79,7 @@ $total: 9;
 
   &:hover>.box {
     width: 3em;
+
     .check>i {
       transform: rotate(360deg);
     }
@@ -125,6 +126,23 @@ $total: 9;
 
 /*--------- Animation Loading Accueil  -------*/
 
+.animation-accueil {
+  animation: 5s accueil;
+  animation-fill-mode: forwards;
+}
+
+@keyframes accueil {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
 .lds-dual-ring {
   display: inline-block;
   width: 80px;
@@ -135,6 +153,7 @@ $total: 9;
   transform: translate(-50%, -50%);
 
 }
+
 .lds-dual-ring:after {
   content: " ";
   display: block;
@@ -149,11 +168,13 @@ $total: 9;
   animation-fill-mode: forwards;
 
 }
+
 @keyframes lds-dual-ring {
   0% {
     transform: rotate(0deg);
-    
+
   }
+
   100% {
     transform: rotate(360deg);
     opacity: 0;
